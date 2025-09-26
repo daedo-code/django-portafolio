@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/hotkeys.css' %}">
+    <link rel="stylesheet" href="{% static 'css/card.css' %}">
+</head>
+<body>
+
+    <nav>
+        <label class="logo">LOGO</label>
+        <ul id="menu">
+            <li><a class="active item-menu" href="/">Inicio</a></li>
+            <li><a class="item-menu" href="#descripcion">descripcion</a></li>
+            <li><a class="item-menu" href="#skills">Skills</a></li>
+            <li><a class="item-menu" href="#portfolio">Portfolio</a></li>
+            <li><a class="item-menu" href="#contact">Contact</a></li>
+        </ul>
+        
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
+
+    </nav>
+
+    <section class="section-main" id="inicio" style="background: #191D21;">
+
+            <div class="profile-card">
+                <!-- <div class="image">
+                    <img src="avatar-dev.avif" alt="" class="profile-img">
+                </div> -->
+        
+                <div class="text-data">
+                    <span class="name">Diego Alonso Aedo</span>
+                    <span class="job">Web Developer</span>
+                </div>
+        
+                <div class="media-buttons">
+                    <!-- <a href="" class="link" style="background: #4267B2;">
+                        <i class='bx bxl-facebook-circle'></i>
+                    </a> -->
+                    <a href="" class="link" style="background: #1DA1f2;">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+
+                    <a href="" class="link" style="background: hsl(229, 78%, 56%);">
+                        <i class='bx bxl-linkedin' ></i>
+                    </a>
+                    <!-- <a href="" class="link" style="background: #E1306C">
+                        <i class='bx bxl-instagram-alt' ></i>
+                    </a> -->
+                    <a href="" class="link" style="background: #FFF">
+                        <i class='bx bxl-github' style="color: #000;"></i>
+                    </a>
+                </div>
+            </div>
+
+    </section>
+
+    <section class="" id="descripcion" style="background: #212528;">
+            <h1 style="margin-bottom: 20px;">Sobre mi</h1>
+
+            <div  style="border: 1px solid #FFF;  padding: 40px;">
+                <p style="margin-top: 10px;">
+                    Soy un desarrollador web apasionado por crear interfaces limpias y funcionales. Me encanta aprender nuevas tecnologías y aplicar soluciones simples a problemas complejos. 
+                </p>
+            </div>
+
+            <div>
+
+                <div class="container-description">
+                    <div style="border: 1px solid #FFF;">
+                        <h2>Datos Personales</h2>
+                        
+
+                    <div class="info-card">
+                        <div class="info-item">
+                            <span class="icon">📍</span>
+                            <span>Ciudad, País</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">📧</span>
+                            <span>Daedo.code@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">🔗</span>
+                            <span><a href="https://www.linkedin.com/in/daedo-code/">linkedin.com/in/daedo-code/</a></span>
+                        </div>
+                    </div>
+
+
+                    </div>
+
+                    <div class="border-w-1 ">
+                        <h2>Intereses</h2>
+
+                        <div class="agrup-hobbies">
+                            <div class="item"><i class="fa-solid fa-code"></i><span>Programación</span></div>
+                            <div class="item"><i class="fa-solid fa-palette"></i><span>Diseño</span></div>
+                            <div class="item"><i class="fa-solid fa-book"></i><span>Lectura</span></div>
+                            <div class="item"><i class="fa-solid fa-gamepad"></i><span>Videojuegos</span></div>
+                            <div class="item"><i class="fa-solid fa-music"></i><span>Música</span></div>
+                            <div class="item"><i class="fa-solid fa-plane"></i><span>Viajar</span></div>
+                        </div>
+
+                        <!-- <div class="grid-intereses">
+                            <div class="item"><i class="fa-solid fa-code"></i><span>Programación</span></div>
+                            <div class="item"><i class="fa-solid fa-palette"></i><span>Diseño</span></div>
+                            <div class="item"><i class="fa-solid fa-book"></i><span>Lectura</span></div>
+                            <div class="item"><i class="fa-solid fa-gamepad"></i><span>Videojuegos</span></div>
+                            <div class="item"><i class="fa-solid fa-music"></i><span>Música</span></div>
+                            <div class="item"><i class="fa-solid fa-plane"></i><span>Viajar</span></div>
+                        </div> -->
+
+                    </div>
+                </div>
+
+            </div>
+
+    </section>
+
+    <section class="" id="skills" style="background: #191D21;">
+        <h1 style="margin-bottom: 20px;">Skills</h1>
+
+        <div class="container-skills">
+
+            <div class="agrup-tec-skills">
+                <h2 class="border-w-1 p-10">Tecnical Skills</h2>
+
+                <div>
+                    <div class="box box-skill-general" >
+                        <h4>Python</h4>
+                        <div class="box-level">
+                            <h4 >AVANZADO</h4>
+                        </div>
+                    </div>
+
+                    <div class="box box-skill-general" >
+                        <h4>Django</h4>
+                        <div class="box-level">
+                            <h4 >INTERMEDIO</h4>
+                        </div>
+                    </div>
+
+                    <div class="box box-skill-general" >
+                        <h4>PHP</h4>
+                        <div class="box-level">
+                            <h4 >BASICO</h4>
+                        </div>
+                    </div>
+
+                    <div class="box box-skill-general" >
+                        <h4>Node</h4>
+                        <div class="box-level">
+                            <h4 >INTERMEDIO</h4>
+                        </div>
+                    </div>
+
+                    <div class="box box-skill-general" >
+                        <h4>JavaScript</h4>
+                        <div class="box-level">
+                            <h4 >INTERMEDIO</h4>
+                        </div>
+                    </div>
+
+                    <div class="box box-skill-general" >
+                        <h4>HTML</h4>
+                        <div class="box-level">
+                            <h4 >INTERMEDIO</h4>
+                        </div>
+                    </div>
+
+                    <div class="box box-skill-general" >
+                        <h4>CSS</h4>
+                        <div class="box-level">
+                            <h4 >INTERMEDIO</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="agrup-gen-skills " style="margin-left: 10px;">
+                <h2 class="border-w-1 p-10">General Skills</h2>
+
+                <div>
+                    <div class="box box-skill-general" >
+                        <h4>Resolucion de Problemas</h4>
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="box box-skill-general" >
+                        <h4>Pensamiento Critico</h4>
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+
+                    <!-- <div class="box box-skill-general" >
+                        <h4>Comunicacion Efectiva</h4>
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div> -->
+
+                    <div class="box box-skill-general" >
+                        <h4>Adaptacion al Cambio</h4>
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="" id="portfolio" style="background: #212528;">
+        <h1 style="margin-bottom: 20px;">Portfolio</h1>
+
+        <div class="container-portfolio">
+
+
+            <div class="box-portfolio">
+                <!-- <h4>Enfermeria</h4> -->
+                <img src="{% static 'img/enfermeria-2.png' %}" alt="Ejemplo" class="responsive-img">
+                 <a href="https://www.controlpanel.cl/enfermeria/">
+                    <div class="overlay">
+                        <h2 class="title">Enfermeria</h2>
+                    </div>
+                 </a>
+            </div>
+
+            <div class="box-portfolio border-w-1" style="display: flex; justify-content: center;">
+                <h4>Project Manager</h4>
+                <!-- <img src="/img/project-one.png" alt="Ejemplo" class="responsive-img"> -->
+                 <a href="#">
+                    <div class="overlay">
+                        <!-- <h2 class="title">Blog Manager</h2> -->
+                    </div>
+                 </a>
+            </div>
+
+            <div class="box-portfolio border-w-1" style="display: flex; justify-content: center;">
+                <h4>Blog</h4>
+                <!-- <img src="/img/project-one.png" alt="Ejemplo" class="responsive-img"> -->
+                 <a href="#">
+                    <div class="overlay">
+                        <!-- <h2 class="title">ToDo List</h2> -->
+                    </div>
+                 </a>
+            </div>
+
+            <!-- <div class="box-portfolio">
+                <h4>ToDo List</h4>
+            </div>
+
+            <div class="box-portfolio">
+                <h4>Blog</h4>
+            </div> -->
+
+        </div>
+
+    </section>
+
+    {% include 'sections/contact.html' %}
+
+    <footer style="background: #212528;">
+            <div class="media-buttons">
+                <a href="" class="link" style="background: #4267B2;">
+                    <i class='bx bxl-facebook-circle'></i>
+                </a>
+                <a href="" class="link" style="background: #1DA1f2;">
+                    <i class='bx bxl-twitter' ></i>
+                </a>
+                <a href="" class="link" style="background: #E1306C">
+                    <i class='bx bxl-instagram-alt' ></i>
+                </a>
+                <a href="" class="link" style="background: #FF0000">
+                    <i class='bx bxl-youtube' ></i>
+                </a>
+            </div>
+    </footer>
+
+
+<script src="main.js"></script>
+</body>
+</html>

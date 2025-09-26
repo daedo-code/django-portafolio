@@ -1,0 +1,39 @@
+<section class="" id="contact" style="background: #191D21;">
+    <h1 style="margin-bottom: 20px;">Contact</h1>
+
+    <div class="container-contact">
+
+        <form method="POST">
+            {% csrf_token %}
+
+              {{ form.nombre }}
+              {% if form.nombre.errors %}
+                <div class="error">{{ form.nombre.errors }}</div>
+              {% endif %}
+
+              {{ form.email }}
+              {% if form.email.errors %}
+                <div class="error">{{ form.email.errors }}</div>
+              {% endif %}
+
+              {{ form.telefono }}
+              {% if form.telefono.errors %}
+                <div class="error">{{ form.telefono.errors }}</div>
+              {% endif %}
+
+              {{ form.cuerpo }}
+              {% if form.cuerpo.errors %}
+                <div class="error">{{ form.cuerpo.errors }}</div>
+              {% endif %}
+
+
+            <!-- <input type="text" placeholder="Fono" required> -->
+            <!-- <textarea name="" id="" placeholder="Mensaje" required></textarea> -->
+            <div class="box-btn">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+
+    </div>
+
+</section>

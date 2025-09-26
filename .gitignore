@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+
+# Entorno virtual
+env/
+venv/
+
+# Archivos sensibles
+.env
+
+# Archivos de Django
+*.log
+media/
+
+# Docker
+postgres_data/
+*.pid
+*.log
+
+# IDEs
+.vscode/
+.idea/
+
+# Carpetas con datos persistentes de Docker/Postgres
+data/
+postgres_data/

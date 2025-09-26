@@ -1,0 +1,38 @@
+.b-1{
+   border: 1px solid #000; 
+}
+
+.border-w-1{
+    border: 1px solid #FFF;
+}
+
+.border-w-3{
+    border: 3px solid #FFF;
+}
+
+.bb-none{
+    border-bottom: none;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.h-400{
+    height: 400px;
+}
+
+.mt-80{
+    margin-top: 80px;
+}
+
+.p-10{
+    padding: 10px;
+}
+.pt-70{
+    padding-top: 70px
+}
+
+.b-70{
+    padding-bottom: 70px
+}

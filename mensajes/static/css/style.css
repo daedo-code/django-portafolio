@@ -1,0 +1,434 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    color: #FFF;
+}
+
+:root {
+    /* --primary-color: #3498db;
+    --secondary-color: #2ecc71; */
+    --font-size-title-primary: 3rem;
+    --font-size-title-secondary: 1.7rem;
+    --spacing: 16px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: montserrat;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background: #1D1F20;
+    /* background: transparent; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    z-index: 1000;
+}
+label.logo{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 0 100px;
+    line-height: 70px;
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+nav a{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+a.active,
+a:hover{
+    border: 1px solid white;
+    transition: .5s;
+}
+
+nav #icon{
+    color: white;
+    font-size: 25px;
+    line-height: 70px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+section{
+    padding: 120px 15%;
+    /* display: none !important; */
+}
+
+
+section h1{
+    /* font-size: 40px; */
+    font-size: var(--font-size-title-primary);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+section h2{
+    font-size: var(--font-size-title-secondary);
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.container-description{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.agrup-intereses{
+    border: 1px solid #FFF;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); */
+}
+
+
+.info-card {
+  display: flex;
+  flex-direction: column; /* 🔑 cambia a vertical */
+  gap: 0.75rem;          /* espacio entre filas */
+  /* padding: 1rem; */
+  /* background: #f8f8f8; */
+  border-radius: 8px;
+  max-width: 300px;      /* opcional, para no estirarlo demasiado */
+  padding: 10px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* espacio entre icono y texto */
+}
+
+
+.agrup-hobbies{
+    /* border: 1px solid #FFF; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background: #2b2b2b;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.item i {
+  font-size: 2rem;
+  color: #4fa6f7; /* azul clarito */
+}
+
+.item:hover {
+  transform: scale(1.02);
+  background: #333;
+}
+
+
+
+
+.box{
+    border: 1px solid #FFF;
+    width: 100%;
+    height: 100px;
+}
+
+.container-skills{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.box-skill-general{
+    display: flex; 
+    justify-content:space-between; 
+    align-items: center; 
+    padding: 0px 40px;
+}
+
+.box-skill-general i{
+    font-size: 30px;
+}
+
+.agrup-tec-skills{
+    margin-bottom: 40px;
+}
+
+.box-level{
+    border: 3px solid #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 120px;
+}
+
+
+.container-portfolio{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.box-portfolio{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid #FFF; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+
+    display: block;
+    aspect-ratio: 16 / 9; 
+    overflow: hidden;
+}
+
+.box-portfolio:hover{
+    transform: translateY(-20px); /* Moves the card 10px upwards */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Adds a more prominent shadow */
+}
+
+.container-contact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-contact input{
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 5px;
+    width: 60%;
+    background: #212528;
+}
+
+.container-contact textarea{
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 60%;
+    height: 200px;
+    padding: 20px;
+    background: #212528;
+    resize: none;
+}
+
+.box-btn{
+    /* border: 1px solid #FFF; */
+    display: flex;
+    align-items: start;
+    width: 60%;
+    margin-top: 10px;
+}
+
+.container-contact form button{
+    color: #000;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease; /* Transición suave */
+}
+
+.container-contact form button:hover{
+    background-color: #3498DB;
+    color: #FFF;
+}
+
+.enfermeria{
+    background-image: url('./img/project-one.png');
+    width: 100%; 
+    min-height: 200px; 
+    background-size: contain;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    border: 1px solid #FFF;
+}
+  
+.responsive-img {
+    width: 100%; /* Ajusta al ancho del contenedor */
+    height: 100%; /* Asegura que ocupe toda la altura */
+    object-fit: cover; /* Mantiene la relación de aspecto */
+    object-position: center; /* Centra la imagen */
+  }
+
+
+.box-portfolio .overlay {
+    position: absolute; /* Superposición sobre la imagen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Capa semitransparente (negra) */
+    opacity: 0; /* Oculta la capa inicialmente */
+    transition: opacity 0.3s ease; /* Animación suave */
+}
+
+.box-portfolio .overlay .title {
+    color: white; /* Color del texto */
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    opacity: 0; /* El título también es inicialmente invisible */
+    transition: opacity 0.3s ease; /* Animación suave */
+  }
+
+.box-portfolio:hover .overlay {
+    opacity: 1; /* Muestra la capa al hacer hover */
+}
+
+.box-portfolio:hover .overlay .title {
+    opacity: 1; /* Muestra el título */
+}
+
+
+footer .media-buttons{
+    /* border: 1px solid #FFF; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+/* .box-hobby{
+    border: 1px solid #FFF; 
+    width: 100px; 
+    height: 100px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 10px;
+} */
+
+@media (max-width: 1250px){
+    .container-contact input,
+    .container-contact textarea,
+    .box-btn{
+        width: 80%;
+    }
+}
+
+@media (max-width: 1048px){
+    label.logo{
+        font-size: 25px;
+        padding-left: 60px;
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+    nav a{
+        font-size: 17px;
+    }
+    .container-contact input,
+    .container-contact textarea,
+    .box-btn{
+        width: 90%;
+    }
+}
+
+@media (max-width: 909px){
+    nav #icon{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2F3640;
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    a.active,
+    a:hover{
+        border: none;
+        color: #3498DB;
+    }
+    nav ul.show{
+        left: 0;
+    }
+
+    .container-contact input,
+    .container-contact textarea,
+    .box-btn{
+        width: 100%;
+    }
+    :root {
+        --font-size-title-primary: 2rem;
+        --font-size-title-secondary: 1.3rem;
+    }
+    
+}
+
+/* @media (max-width: 760px){
+    .box-skill-general{
+        padding: 10px;
+    }
+} */
+
+@media (max-width: 680px){
+    section{
+        padding: 120px 20px;
+    }
+}
