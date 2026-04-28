@@ -42,8 +42,8 @@ Portafolio personal desarrollado con Django, con formulario de contacto publico 
 2. Crear y activar entorno virtual:
    ```bash
    python -m venv venv
-   # Windows (PowerShell)
-   .\venv\Scripts\Activate.ps1
+   # Windows:
+   .\venv\Scripts\Activate
    # Linux/macOS
    source venv/bin/activate
    ```
