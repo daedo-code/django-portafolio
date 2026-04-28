@@ -108,6 +108,3 @@ Portafolio personal desarrollado con Django, con formulario de contacto publico 
 - `DATABASE_HOST`
 - `DATABASE_PORT`
 
-## Licencia
-
-Uso personal / educativo (ajustar segun tu preferencia).
